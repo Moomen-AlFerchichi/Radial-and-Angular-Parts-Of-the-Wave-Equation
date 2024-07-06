@@ -1,4 +1,4 @@
-# Associated Laguerre polynomial
+# Generalized Laguerre polynomial
 def Polynomial_recursive_L_k_alpha(k, x, a, mem={}):
     # case k=0 and k=1
     if k == 0:
