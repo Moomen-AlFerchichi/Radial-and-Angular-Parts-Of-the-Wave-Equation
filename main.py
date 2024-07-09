@@ -79,7 +79,7 @@ def fonction_angulaire(m, l, th, phi):
     return np.vectorize(associated_legendre)(m, l, np.cos(th)) * norm_const * np.real(np.exp(1.j * m * phi))
 
 # Simulation Parameters
-print("Make sure that n!=0 and n<l<m | Soiez sure que n!=0 et n<l<=m")
+print("Make sure that n!=0 and n>l>=m | Soiez sure que n!=0 et n>l>=m")
 print("Errors can accumulate at higher parameters | des erreurs peut s'accumuler au parametres élevés")
 n = int(input("n (principal quantum number)|(nombre quantique principal): "))
 l = int(input("l (azimuthal quantum number)|(nombre quantique azimutal) : "))
