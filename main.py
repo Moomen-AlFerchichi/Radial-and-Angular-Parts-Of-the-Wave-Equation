@@ -1,6 +1,10 @@
 #----------------------------------------------------------------------------
 #Date : July 2024
 #Author : Moomen Al Ferchichi
+"""
+visualizing the radial and angular parts of the Schrodinger 
+wave equation for hydrogen like atom at different states
+"""
 #----------------------------------------------------------------------------
 import numpy as np
 import matplotlib.pyplot as plt
@@ -82,7 +86,7 @@ def fonction_angulaire(m, l, th, phi):
     # Value of the associated_Legendre must be vectorized for proper ploting
     return np.vectorize(associated_legendre)(m, l, np.cos(th)) * norm_const * np.real(np.exp(1.j * m * phi))
 
-# Simulation Parameters
+# visualization Parameters
 print("Make sure that n!=0 and n>l>=m | Soiez sure que n!=0 et n>l>=m")
 print("Errors can accumulate at higher parameters | des erreurs peut s'accumuler au parametres élevés")
 n = int(input("n (principal quantum number)|(nombre quantique principal): "))
